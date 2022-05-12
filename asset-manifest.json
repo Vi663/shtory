@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shtory/static/css/main.a71cccb8.css",
+    "main.js": "/shtory/static/js/main.1557a835.js",
+    "index.html": "/shtory/index.html",
+    "main.a71cccb8.css.map": "/shtory/static/css/main.a71cccb8.css.map",
+    "main.1557a835.js.map": "/shtory/static/js/main.1557a835.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a71cccb8.css",
+    "static/js/main.1557a835.js"
+  ]
+}
