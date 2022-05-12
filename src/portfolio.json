@@ -1,0 +1,32 @@
+[
+  { 
+    "id": "id-1", 
+    "text": "Приклад роботи №1", 
+    "src": "https://dl.dropboxusercontent.com/s/y62e01g99f36d9p/No-Image-Placeholder.svg.png?dl=0",
+    "availability": true 
+  },
+  { 
+    "id": "id-2", 
+    "text": "Приклад роботи №2", 
+    "src": "https://dl.dropboxusercontent.com/s/y62e01g99f36d9p/No-Image-Placeholder.svg.png?dl=0",
+    "availability": true 
+  },
+  { 
+    "id": "id-3", 
+    "text": "Приклад роботи №3", 
+    "src": "https://dl.dropboxusercontent.com/s/y62e01g99f36d9p/No-Image-Placeholder.svg.png?dl=0",
+    "availability": true 
+  },
+  { 
+    "id": "id-4", 
+    "text": "Приклад роботи №4", 
+    "src": "https://dl.dropboxusercontent.com/s/y62e01g99f36d9p/No-Image-Placeholder.svg.png?dl=0",
+    "availability": true 
+  },
+  { 
+    "id": "id-5", 
+    "text": "Приклад роботи №5", 
+    "src": "https://dl.dropboxusercontent.com/s/y62e01g99f36d9p/No-Image-Placeholder.svg.png?dl=0",
+    "availability": false 
+  }
+]

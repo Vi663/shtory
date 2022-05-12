@@ -1,0 +1,58 @@
+* {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background-color: #95b1a917;
+}
+
+.slogan {
+  font-size: 25px;
+  color: #421000;
+  /* padding-botom: 20px;
+  padding-left: 20px; */
+  padding: 20px 0px 20px 20px;
+}
+
+.logo {}
+
+.nav_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  color: #421000;
+  margin: 0;
+}
+
+.nav_item {
+  list-style: none;
+  text-decoration: none;
+  color: #421000;
+}
+
+.active {
+  color: #95b1a9;
+  text-decoration: underline;
+}
+
+.nav_item:hover .nav_item:focus {
+  color: #95b1a9;
+}
