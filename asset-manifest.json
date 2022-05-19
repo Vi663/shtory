@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/shtory/static/css/main.a71cccb8.css",
-    "main.js": "/shtory/static/js/main.1557a835.js",
+    "main.css": "/shtory/static/css/main.8ef2657f.css",
+    "main.js": "/shtory/static/js/main.8a02fc3f.js",
     "index.html": "/shtory/index.html",
-    "main.a71cccb8.css.map": "/shtory/static/css/main.a71cccb8.css.map",
-    "main.1557a835.js.map": "/shtory/static/js/main.1557a835.js.map"
+    "main.8ef2657f.css.map": "/shtory/static/css/main.8ef2657f.css.map",
+    "main.8a02fc3f.js.map": "/shtory/static/js/main.8a02fc3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.a71cccb8.css",
-    "static/js/main.1557a835.js"
+    "static/css/main.8ef2657f.css",
+    "static/js/main.8a02fc3f.js"
   ]
 }
