@@ -1,16 +1,18 @@
 import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Header } from '../Header/Header';
-import { HomeView } from '../../views/HomeView'
-import { AboutView } from '../../views/AboutView'
-import { ContactsView } from '../../views/ContactsView'
-import { PortfolioView } from '../../views/PortfolioView'
-import * as porfolio from '../../portfolio.json'
+import { ContactForm } from '../ContactForm/ContactForm';
+import { HomeView } from '../../views/HomeView';
+import { AboutView } from '../../views/AboutView';
+import { ContactsView } from '../../views/ContactsView';
+import { PortfolioView } from '../../views/PortfolioView';
+import * as porfolio from '../../portfolio.json';
 
 const App = () => (
   <>
     <Header />
-    <Suspense fallback={<h1>Загружаем...</h1>}>
+    <ContactForm />
+    <Suspense fallback={<h1>Downloading...</h1>}>
       <Routes>
         <Route path='/' element={<HomeView />} />
         <Route path='/about' element={<AboutView />} />
