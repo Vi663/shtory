@@ -7,10 +7,10 @@ import s from './PortfolioView.module.css';
 export const PortfolioView = ({ works }) => {
   // const { Meta } = Card;
   return (
-    <div className={s.portfolioContainer}>
-      <ul className={s.portfolioList}>
+    <div className={s.container}>
+      <ul className={s.list}>
         {works.map(work => (
-          // <li key={work.id} className={s.portfolioListItem}>
+          // <li key={work.id} className={s.listItem}>
           //   <Card
           //     hoverable
           //     cover={<img alt={work.id} src={work.src} />}
@@ -19,8 +19,11 @@ export const PortfolioView = ({ works }) => {
           //     {work.availability ? <span>В наявності</span> : <span>Hемає в наявності</span>}
           //   </Card>
           // </li>
-          <li key={work.id} className={s.portfolioListItem}>
-            <img src={work.src} alt={work.id} width={200}/>
+          <li key={work.id} className={s.listItem}>
+            <div className={s.wrapper}>
+              <img className={s.image} src={work.src} alt={work.id}/>
+            </div>
+            
             <Link to={`/works/${work.id}`}> {work.text} </Link>
             {work.availability ? <span>В наявності</span> : <span>Hемає в наявності</span>}
             {/* {console.log(work.src)} */}

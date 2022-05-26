@@ -23,7 +23,7 @@ const App = () => (
         <Route path='/portfolio' element={<PortfolioView works={ porfolio.default }/>} />
       </Routes>
     </Suspense>
-    {/* <ToastContainer position="top-right" theme="dark" autoClose='2000'/> */}
+    {/* <ToastContainer position="top-right" theme="dark" autoClose='5000'/> */}
     <ToastContainer
       position="top-right"
       autoClose={5000}

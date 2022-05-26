@@ -24,10 +24,10 @@ export function ContactForm({ closeModal, closeBackDrop }) {
 
   const handleSubmit = e => {
     e.preventDefault();
-    // emailjs.sendForm('service_tw0o46l', 'template_y45obrd', e.target, 'z-OSJ7xGQ9q_GjqFX'
-    // ).then(response => {
-    //   console.log(response);
-    // }).catch(err => console.log(err));
+    emailjs.sendForm('service_tw0o46l', 'template_y45obrd', e.target, 'z-OSJ7xGQ9q_GjqFX'
+    ).then(response => {
+      console.log(response);
+    }).catch(err => console.log(err));
     resetContact();
     onCloseModal();
     toast.success('Замовлення відправлено 👌');
@@ -86,13 +86,14 @@ export function ContactForm({ closeModal, closeBackDrop }) {
 
         <label className={s.ContactLabel}>Опишіть замовлення максимально детально</label>
         <textarea
-          className={s.ContactInput}
+          className={s.ContactTextArea}
           type="text"
           name="message"
           value={message}
           id='ID4'
           onChange={handleChange}
           rows='6'
+          placeholder='Опишіть ваше замовлення'
           required
         />
 

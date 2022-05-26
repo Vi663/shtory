@@ -5,7 +5,7 @@
   color: #fff;
   font-family: inherit;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 30px;
   outline: none;
   border: none;
@@ -17,8 +17,9 @@
   letter-spacing: 0.06em;
   background-color: #2196F3;
   cursor: pointer;
-  margin: auto;
-  margin-top: 20px;
+  margin: 30px auto;
+  /* margin-top: 20px;
+  margin-bottom: 30px; */
 }
 .openModalBtn:hover,
 .openModalBtn:focus {
