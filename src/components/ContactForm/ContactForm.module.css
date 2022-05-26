@@ -1,3 +1,15 @@
+.ContactForm_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
+  max-width: 528px;
+  max-height: 581px;
+  background-color: #fff;
+}
+
 .heading {
   max-width: 700px;
   font-weight: 700;
@@ -60,4 +72,42 @@
   cursor: pointer;
   margin: auto;
   margin-top: 20px;
+}
+
+.ContactBtn:hover,
+.ContactBtn:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transform: scale(0.9);
+}
+
+.closeModalBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  outline: none;
+  border: none;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  margin-left: 750px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.closeModalBtn:hover,
+.closeModalBtn:focus {
+background-color: #2196F3;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 1px 2px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);
+transform: scale(0.9);
 }

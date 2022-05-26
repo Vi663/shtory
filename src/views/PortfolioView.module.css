@@ -1,0 +1,22 @@
+.portfolioContainer {
+  width: 90vw;
+  padding: 60px;
+  margin: auto;
+}
+
+.portfolioList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  align-items: center;
+}
+
+.portfolioListItem {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-items:center;
+  align-items: center;
+}

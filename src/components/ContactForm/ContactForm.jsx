@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com'
 import s from './ContactForm.module.css';
 
-export function ContactForm() {
+export function ContactForm({ closeModal, closeBackDrop }) {
   
   const initialState = {
     name: "",
@@ -25,18 +25,25 @@ export function ContactForm() {
     emailjs.sendForm('service_tw0o46l', 'template_y45obrd', e.target, 'z-OSJ7xGQ9q_GjqFX'
     ).then(response => {
       console.log(response);
-    }).catch(err=> console.log(err))
-    resetContact()
-    console.log('Form submited')
+    }).catch(err => console.log(err));
+    resetContact();
+    onCloseModal();
+    console.log('Form submited');
   }
 
   const resetContact = () => {
     setState({ ...initialState });
   }
 
+  const onCloseModal = () => {
+    closeModal(false);
+    closeBackDrop(false);
+  }
+
   const { name, number, email, message} = state;
   return (
     <div className={s.ContactForm_container}>
+      <button className={s.closeModalBtn} onClick={onCloseModal}>X</button>
       <h1 className={s.heading}>Залиште деталі замовлення, ми вам перетелефонуємо</h1>
       <form className={s.ContactForm} autoComplete="on" onSubmit={handleSubmit}>
         <label className={s.ContactLabel}>Ім'я</label>

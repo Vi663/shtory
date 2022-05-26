@@ -1,0 +1,10 @@
+.portfolioContainer {
+  
+  padding: 60px;
+  margin: auto;
+}
+
+.portfolioList {
+  flex-direction: column;
+  list-style: none;
+}
