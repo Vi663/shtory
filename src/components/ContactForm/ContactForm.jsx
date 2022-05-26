@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com'
 import s from './ContactForm.module.css';
 
@@ -22,13 +24,13 @@ export function ContactForm({ closeModal, closeBackDrop }) {
 
   const handleSubmit = e => {
     e.preventDefault();
-    emailjs.sendForm('service_tw0o46l', 'template_y45obrd', e.target, 'z-OSJ7xGQ9q_GjqFX'
-    ).then(response => {
-      console.log(response);
-    }).catch(err => console.log(err));
+    // emailjs.sendForm('service_tw0o46l', 'template_y45obrd', e.target, 'z-OSJ7xGQ9q_GjqFX'
+    // ).then(response => {
+    //   console.log(response);
+    // }).catch(err => console.log(err));
     resetContact();
     onCloseModal();
-    console.log('Form submited');
+    toast.success('Замовлення відправлено 👌');
   }
 
   const resetContact = () => {

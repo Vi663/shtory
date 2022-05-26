@@ -7,6 +7,8 @@ import { HomeView } from '../../views/HomeView';
 import { AboutView } from '../../views/AboutView';
 import { ContactsView } from '../../views/ContactsView';
 import { PortfolioView } from '../../views/PortfolioView';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import * as porfolio from '../../portfolio.json';
 
 const App = () => (
@@ -21,6 +23,18 @@ const App = () => (
         <Route path='/portfolio' element={<PortfolioView works={ porfolio.default }/>} />
       </Routes>
     </Suspense>
+    {/* <ToastContainer position="top-right" theme="dark" autoClose='2000'/> */}
+    <ToastContainer
+      position="top-right"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+    />
   </ThemeProvider>
 );
 
